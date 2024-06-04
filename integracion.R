@@ -1,0 +1,5 @@
+setwd("C:\\Users\\Usuario\\Documents\\DSI\\EXAMEN_RETO04\\Examen_A1\\AITANA_ANE_COOPERATIVO")
+df1<-read.csv("DF_DC_na.csv")
+df2<-read.csv("water-quality-context.csv")
+df_v0 <- merge(df1, df2, by = "ID")
+write.csv(df_v0, "DF_DC_V0.csv")
